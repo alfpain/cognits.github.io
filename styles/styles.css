@@ -1,0 +1,23 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.navbar {
+  background-color: white;
+  margin-bottom: 0px;
+  font-family: 'ProximaNova-Semibold';
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar .container .navbar-header .navbar-brand {
+  background-image: url("../img/cognits_logo.png"), none;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 150px;
+  height: 36px;
+  padding: 0px;
+  text-indent: -9999px;
+  margin-left: 0px;
+  margin-top: 21px;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cognits_logo.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='meteor-logo.png', sizingMethod='scale')";
+}

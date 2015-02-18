@@ -1,0 +1,87 @@
+# This file specifies your Python application's runtime configuration
+# including URL routing, versions, static file uploads, etc. See
+# https://developers.google.com/appengine/docs/python/config/appconfig
+# for details.
+
+application: cognits
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+default_expiration: "30d"
+
+# Handlers define how to route requests to your application.
+handlers:
+
+- url: .*
+  script: main.app
+
+
+# CSS
+
+- url: /styles/(.*\.css)
+  mime_type: text/css
+  static_files: styles/\1
+  upload: styles/(.*\.css)
+  expiration: "30d"
+
+## JavaScript
+
+- url: /js/(.*\.js)
+  mime_type: application/javascript
+  static_files: js/\1
+  upload: js/(.*\.js)
+  expiration: "30d"
+#
+## Web fonts
+#
+- url: /fonts/(.*\.eot)
+  mime_type: application/vnd.ms-fontobject
+  static_files: fonts/\1
+  upload: fonts/(.*\.eot)
+  expiration: "30d"
+
+- url: /fonts/(.*\.otf)
+  mime_type: font/opentype
+  static_files: fonts/\1
+  upload: fonts/(.*\.otf)
+  expiration: "30d"
+
+- url: /fonts/(.*\.(svg|svgz))
+  mime_type: images/svg+xml
+  static_files: img/\1
+  upload: img/(.*\.(svg|svgz))
+  expiration: "30d"
+
+- url: /fonts/(.*\.(ttf|ttc))
+  mime_type: application/x-font-ttf
+  static_files: fonts/\1
+  upload: fonts/(.*\.(ttf|ttc))
+  expiration: "30d"
+
+- url: /fonts/(.*\.woff)
+  mime_type: application/font-woff
+  static_files: fonts/\1
+  upload: fonts/(.*\.woff)
+  expiration: "30d"
+#
+## image files
+- url: /img/(.*\.(bmp|gif|jpeg|jpg|png))
+  static_files: img/\1
+  upload: img/(.*\.(bmp|gif|jpeg|jpg|png))
+  expiration: "30d"
+
+# This handler tells app engine how to route requests to a WSGI application.
+# The script value is in the format <path.to.module>.<wsgi_application>
+# where <wsgi_application> is a WSGI application object.
+- url: /favicon\.ico
+  mime_type: image/vnd.microsoft.icon
+  static_files: img/favicon.ico
+  upload: img/favicon.ico
+
+libraries:
+- name: jinja2
+  version: "2.6"
+- name: markupsafe
+  version: "0.15"

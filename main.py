@@ -1,6 +1,7 @@
 """`main` is the top level module for your Flask application."""
 
 from google.appengine.api import mail
+import logging
 
 # Import the Flask Framework
 from flask import Flask, session, redirect, url_for, escape, request
@@ -23,18 +24,20 @@ def hello():
     """Return Home Page."""
 
     if request.method == 'POST':
+        logging.info("Form submitted")
 
-        try:
-        	email = request.form('email')
-        	body = request.form('content')
+        # try:
+        email = request.form['email']
+        body = request.form['content']
 
-            contact_message = "Thanks for your email!"
+        contact_message = "Thanks for your message!"
 
-            params['contact_message'] = contact_message
-
-            send_mail(email, EMAIL, "Message from webpage", body)
-        except:
-            pass
+        params['contact_message'] = contact_message
+        send_mail(email, EMAIL, "Message from webpage", body)
+        logging.info("sending email to - " + email + " - with message - " + body)
+        # except, e:
+        #     logging.info(e)
+        #     pass
 
 
     return render_template('index.html', **params)
@@ -45,7 +48,7 @@ def page_not_found(e):
     return 'Sorry, Nothing at this URL.', 404
 
 
-@app.errorhandler(500)
-def page_not_found(e):
-    """Return a custom 500 error."""
-    return 'Sorry, unexpected error: {}'.format(e), 500
+    @app.errorhandler(500)
+    def page_not_found(e):
+        """Return a custom 500 error."""
+        return 'Sorry, unexpected error: {}'.format(e), 500

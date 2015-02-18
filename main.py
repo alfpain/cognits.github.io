@@ -1,5 +1,7 @@
 """`main` is the top level module for your Flask application."""
 
+from google.appengine.api import mail
+
 # Import the Flask Framework
 from flask import Flask, session, redirect, url_for, escape, request
 from flask import render_template
@@ -10,13 +12,30 @@ app.debug = False
 # the App Engine WSGI application server.
 params = {'app_name': 'Cognits'}
 
+EMAIL = "s@cognits.co"
+
+def send_mail(sender_address, user_address, subject, body):
+    mail.send_mail(sender_address, user_address, subject, body)
+
+
 @app.route('/', methods=['GET', 'POST'])
 def hello():
     """Return Home Page."""
+
     if request.method == 'POST':
-    	email = request.form('email')
-    	name = request.form('name')
-    	content = request.form('content')
+
+        try:
+        	email = request.form('email')
+        	body = request.form('content')
+
+            contact_message = "Thanks for your email!"
+
+            params['contact_message'] = contact_message
+
+            send_mail(email, EMAIL, "Message from webpage", body)
+        except:
+            pass
+
 
     return render_template('index.html', **params)
 

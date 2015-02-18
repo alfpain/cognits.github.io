@@ -14,10 +14,6 @@ default_expiration: "30d"
 # Handlers define how to route requests to your application.
 handlers:
 
-- url: .*
-  script: main.app
-
-
 # CSS
 
 - url: /styles/(.*\.css)
@@ -26,12 +22,13 @@ handlers:
   upload: styles/(.*\.css)
   expiration: "30d"
 
+
 ## JavaScript
 
-- url: /js/(.*\.js)
+- url: /js/(.*\.(js|map))
   mime_type: application/javascript
   static_files: js/\1
-  upload: js/(.*\.js)
+  upload: js/(.*\.(js|map))
   expiration: "30d"
 #
 ## Web fonts
@@ -79,6 +76,9 @@ handlers:
   mime_type: image/vnd.microsoft.icon
   static_files: img/favicon.ico
   upload: img/favicon.ico
+
+- url: .*
+  script: main.app
 
 libraries:
 - name: jinja2

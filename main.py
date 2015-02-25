@@ -20,11 +20,18 @@ def send_mail(sender_address, user_address, subject, body):
 
 
 @app.route('/', methods=['GET', 'POST'])
-def hello():
+def home():
     """Return Home Page."""
+
+
+    return render_template('index.html', **params)
+
+@app.route('/send-message/', methods=['POST'])
+def send_message():
 
     if request.method == 'POST':
         logging.info("Form submitted")
+        logging.info(dir(request.form.to_dict().values))
 
         # try:
         email = request.form['email']
@@ -37,10 +44,10 @@ def hello():
         logging.info("sending email to - " + email + " - with message - " + body)
         # except, e:
         #     logging.info(e)
+
         #     pass
+    return "{message: 'sent'}"
 
-
-    return render_template('index.html', **params)
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -48,7 +55,7 @@ def page_not_found(e):
     return 'Sorry, Nothing at this URL.', 404
 
 
-    @app.errorhandler(500)
-    def page_not_found(e):
-        """Return a custom 500 error."""
-        return 'Sorry, unexpected error: {}'.format(e), 500
+@app.errorhandler(500)
+def page_not_found(e):
+    """Return a custom 500 error."""
+    return 'Sorry, unexpected error: {}'.format(e), 500

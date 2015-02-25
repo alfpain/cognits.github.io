@@ -83,6 +83,7 @@ handlers:
 skip_files:
   - ^bower_components$
   - ^node_modules$
+  - .*\.pyc$
 
 
 libraries:

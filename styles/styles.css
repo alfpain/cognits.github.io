@@ -2,10 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 .navbar {
-  background-color: white;
+  background-color: black;
   margin-bottom: 0px;
-  font-family: 'ProximaNova-Semibold';
-  border-bottom: 1px solid #f0f0f0;
+  font-family: 'Roboto';
+  border-bottom: 0px solid black;
 }
 
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
@@ -14,7 +14,7 @@
 }
 
 .navbar .container .navbar-header .navbar-brand {
-  background-image: url("../img/cognits_logo.png"), none;
+  background-image: url("../img/cognits_logo_wht.png"), none;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 150px;
@@ -34,7 +34,7 @@
   font-size: 10px;
   line-height: 14px;
   letter-spacing: 1.5px;
-  color: #27272b;
+  color: white;
   margin: 0 15px;
 }
 

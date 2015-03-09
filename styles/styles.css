@@ -76,14 +76,14 @@
 }
 
 .home>#intro .jumbotron .btn {
-  color: #ea362b;
-  background-color: transparent;
   border-color: #ea362b;
+  color: white;
+  background-color: #ea362b;
 }
 
 .home>#intro .jumbotron .btn:hover {
-  color: white;
-  background-color: #ea362b;
+  color: #ea362b;
+  background-color: transparent;
 }
 
 #services {

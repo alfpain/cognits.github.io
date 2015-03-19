@@ -4,7 +4,6 @@
 .navbar {
   background-color: black;
   margin-bottom: 0px;
-  font-family: 'Roboto';
   border-bottom: 0px solid black;
 }
 
@@ -42,49 +41,72 @@
   background-color: black;
 }
 
-.home>section {
-  margin-top: 20px;
+/*********************************/
+
+section {
+
 }
 
-.home>#intro {
-  padding-top: 140px;
-  margin-top: 0;
-  background-color: #000000;
+.home > section {
+
+}
+
+.home > #intro {
+
   color: white;
-  font-family:'Roboto', sans-serif;
-  z-index: -1;
+
+
 }
 
 .home #intro .intro-background-top, .home #intro .intro-background-bottom{
-
-  overflow: auto;
-  position: relative;
-  z-index: 0;
+  position: fixed;
+  display:block;
 }
 
 .home #intro .intro-background-top {
-  margin: -50px;
+  background: url(../img/back_intro2-02.png) no-repeat;
+  height:50%;
+  width:20%;
+  top: 5%;
+  right: 0%;
 }
 
 .home #intro .intro-background-bottom {
+  background: url(../img/back_intro1-02.png) 50% 0 no-repeat fixed;
+
 }
 
-.home>#intro .jumbotron {
+.home > #intro .jumbotron {
   background-color: transparent;
   padding: 0px;
   background-size: 10%;
 }
 
-.home>#intro .jumbotron .btn {
+.home > #intro .btn {
   border-color: #ea362b;
   color: white;
   background-color: #ea362b;
+  border-bottom:
 }
 
-.home>#intro .jumbotron .btn:hover {
+.home > #intro .btn:hover {
   color: #ea362b;
   background-color: transparent;
 }
+
+/**/
+
+#quotes {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color:#3BC4D7;
+}
+
+#quotes > blockquote {
+  border-left:0;
+}
+
+/**/
 
 #services {
   padding-top: 8%;
@@ -142,4 +164,33 @@ footer {
     width: 115px;
     height: 28px;
   }
+
+  .intro-content {
+    margin-top: 20%;
+  }
+
+  .bcg {
+      height: 15%;
+  }
+}
+
+
+/* PARALLAX  */
+/* CSS */
+
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20%;
+    width: 100%;
+}
+/* Background */
+#intro .bcg {
+  background-image:url('../img/intro_background.png')
+}
+
+.intro-content {
+  margin-top: 20%;
 }

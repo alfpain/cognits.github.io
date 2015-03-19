@@ -6,6 +6,7 @@
 4. Be responsive, using Twitter Bootstrap.
 
 
+To run the code, you will need to download [Google App Engine for Python/Linux](https://cloud.google.com/appengine/downloads).
 ## Requirements
 - Implement ONE section at a time, after completing each section, do a PULL-REQUEST! (a section is like intro, quotes...)
 - Write code using best practices

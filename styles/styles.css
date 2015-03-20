@@ -201,3 +201,50 @@ footer {
   height: 30px;,
   width: 30px;
 }
+
+.WouldLike{
+  background-color: #3BC4D7;
+
+}
+.navbar {
+ position: static;
+}
+
+.ParagraphWouldLike{
+  text-align: justify;
+
+}
+
+.OurApprenticesTitle{
+  color: white;
+
+}
+.image{
+ height: 220px;
+ width: 220px;
+  position: relative;
+  top: 190px;
+  margin-top: -193px;
+  margin-left: -30px;
+}
+
+.TitleSoftware{
+  color: gray;
+}
+.HowDoesText{
+  background-color: #E6E6E6;
+
+}
+
+.TitleGray{
+    color: gray;
+}
+#fondo{
+  background: url(../img/intro_background.png) no-repeat;
+  height: 90.80%;
+}
+
+#posicionImg{
+  margin-top: 20%;
+  
+}

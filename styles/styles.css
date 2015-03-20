@@ -194,3 +194,20 @@ footer {
 .intro-content {
   margin-top: 20%;
 }
+/*------new css-------*/
+
+.Cognist {
+  height: 30px;,
+  width: 30px;}
+.navbar{
+  position: static;
+}
+#fondo{
+  background: url(../img/intro_background.png) no-repeat;
+  height: 90.80%;
+}
+
+#posicionImg{
+  margin-top: 20%;
+  
+}

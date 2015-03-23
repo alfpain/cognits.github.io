@@ -69,3 +69,18 @@
      font-size: 20px;
 }
 
+
+.first {
+  background-color: #000000;
+  width: 100%
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30pt;
+  color: white;
+  text-align: center;
+}
+.fondo1 {
+  float:right;
+}

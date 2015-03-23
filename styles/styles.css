@@ -276,13 +276,14 @@ footer {
 
 .first {
   background-color: #000000;
-  width: 100%
+  width: 100%;
+
 }
 
 .title {
   font-family: 'Roboto', sans-serif;
   font-size: 30pt;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 .fondo1 {
@@ -328,4 +329,19 @@ footer {
 .myButtonMail:active {
   position:relative;
   top:1px;
+}
+
+@media screen and (max-width: 992px) {
+    .image {
+       height: 200px;
+        width: 200px;
+         position: relative;
+        margin-top: -300px;
+          margin-left: 430px;
+    }
+}
+@media screen and (max-width: 645px) {
+    .image {
+display: none;
+    }
 }

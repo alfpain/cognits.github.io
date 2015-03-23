@@ -229,7 +229,7 @@ footer {
 }
 
 .TitleSoftware{
-  color: gray;
+  color: #707070;
 }
 .HowDoesText{
   background-color: #E6E6E6;
@@ -237,7 +237,7 @@ footer {
 }
 
 .TitleGray{
-    color: gray;
+    color: #707070;
 }
 #fondo{
   background: url(../img/intro_background.png) no-repeat;
@@ -282,7 +282,7 @@ footer {
 .title {
   font-family: 'Roboto', sans-serif;
   font-size: 30pt;
-  color: white;
+  color: #000;
   text-align: center;
 }
 .fondo1 {

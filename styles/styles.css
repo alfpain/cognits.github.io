@@ -7,7 +7,7 @@
   border-bottom: 0px solid black;
 }
 
-
+.row{margin-right:0px;margin-left:0px}
 /*********************************/
 
 
@@ -19,16 +19,14 @@
 
 .WouldLike{
   background-color: #3BC4D7;
+  height: 250px;
 
 }
 .navbar {
  position: static;
 }
 
-.ParagraphWouldLike{
-  text-align: justify;
 
-}
 
 .OurApprenticesTitle{
   color: white;
@@ -38,9 +36,9 @@
  height: 220px;
  width: 220px;
   position: relative;
-  top: 190px;
-  margin-top: -213px;
-  margin-left: -30px;
+  top: 90px;
+  margin-top: -50%;
+  margin-left: -45%;
 }
 
 .TitleSoftware{
@@ -59,10 +57,7 @@
   height: 90.80%;
 }
 
-#posicionImg{
-  margin-top: 20%;
-  
-}
+
 .fondo2amarillo{
   background-color: #EED329;
   width: 100%;
@@ -145,18 +140,43 @@
   position:relative;
   top:1px;
 }
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1229px) {
     .image {
        height: 200px;
         width: 200px;
          position: relative;
-        margin-top: -300px;
-          margin-left: 430px;
+        margin-top: -130%;
+          margin-left: -55%;
     }
 }
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 1112px) {
     .image {
-display: none;
+       height: 170px;
+        width: 170px;
+         position: relative;
+        margin-top: -130%;
+          margin-left: -55%;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .image {
+       height: 170px;
+        width: 170px;
+         position: relative;
+        margin-top: -20%;
+          margin-left: 70%;
+    }
+    #altura{
+      margin-left: 100%;
+    }
+
+}
+@media screen and (max-width: 845px) {
+    .image {
+    display: none;
+    }
+
+}
+
+

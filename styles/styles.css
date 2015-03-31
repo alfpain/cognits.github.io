@@ -7,199 +7,15 @@
   border-bottom: 0px solid black;
 }
 
-.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-  margin-right: -5px;
-  margin-left: -5px;
-}
-
-.navbar .container .navbar-header .navbar-brand {
-  background-image: url("../img/cognits_logo_wht.png"), none;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 150px;
-  height: 36px;
-  padding: 0px;
-  text-indent: -9999px;
-  margin-left: 0px;
-  margin-top: 31px;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cognits_logo.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='meteor-logo.png', sizingMethod='scale')";
-}
-
-.navbar .nav li>a {
-  padding: 38px 0px 35px;
-  text-transform: uppercase;
-  list-style: none;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: 1.5px;
-  color: white;
-  margin: 0 15px;
-}
-
-.navbar-toggle .icon-bar {
-  background-color: black;
-}
-
+.row{margin-right:0px;margin-left:0px}
 /*********************************/
-
-section {
-
-}
-
-.home > section {
-
-}
-
-.home > #intro {
-
-  color: white;
-
-
-}
-
-.home #intro .intro-background-top, .home #intro .intro-background-bottom{
-  position: fixed;
-  display:block;
-}
-
-.home #intro .intro-background-top {
-  background: url(../img/back_intro2-02.png) no-repeat;
-  height:50%;
-  width:20%;
-  top: 5%;
-  right: 0%;
-}
-
-.home #intro .intro-background-bottom {
-  background: url(../img/back_intro1-02.png) 50% 0 no-repeat fixed;
-
-}
-
-.home > #intro .jumbotron {
-  background-color: transparent;
-  padding: 0px;
-  background-size: 10%;
-}
-
-.home > #intro .btn {
-  border-color: #ea362b;
-  color: white;
-  background-color: #ea362b;
-  border-bottom:
-}
-
-.home > #intro .btn:hover {
-  color: #ea362b;
-  background-color: transparent;
-}
-
-/**/
-
-#quotes {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color:#3BC4D7;
-}
-
-#quotes > blockquote {
-  border-left:0;
-}
-
-/**/
-
-#services {
-  padding-top: 8%;
-  padding-bottom: 8%;
-}
-
-.home>#value {
-  background-color: #70A83B;
-  color: white;
-}
-
-#value {
-  font-size: 28px;
-  font-weight: 100;
-  padding: 20px;
-}
-#value>.section-pitch {
-  font-size: 36px;
-  font-weight: 300;
-}
-
-#value .value-list small {
-  font-size: 55%;
-}
-
-/* FAQ section */
-#faq {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#faq .qa h4.q {
-  font-size: 28px;
-  font-weight: 400;
-}
-
-#faq .qa p.a {
-  font-size: 20px;
-  font-weight: 100;
-}
-
-#contact {
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-footer {
-  padding-top: 40px;
-}
-
-@media (max-width: 992px) {
-  .navbar .container .navbar-header .navbar-brand {
-    margin-top: 15px;
-    margin-left: 15px;
-    width: 115px;
-    height: 28px;
-  }
-
-  .intro-content {
-    margin-top: 20%;
-  }
-
-  .bcg {
-      height: 15%;
-  }
-}
-
-
-/* PARALLAX  */
-/* CSS */
-
-.bcg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 20%;
-    width: 100%;
-}
-/* Background */
-#intro .bcg {
-  background-image:url('../img/intro_background.png')
-}
-
-.intro-content {
-  margin-top: 20%;
-}
 
 
 /*new css*/
-.Cognist {
+.Cognist{
   height: 30px;,
   width: 30px;
+
 }
 
 .WouldLike{
@@ -210,10 +26,7 @@ footer {
  position: static;
 }
 
-.ParagraphWouldLike{
-  text-align: justify;
 
-}
 
 .OurApprenticesTitle{
   color: white;
@@ -223,9 +36,9 @@ footer {
  height: 220px;
  width: 220px;
   position: relative;
-  top: 190px;
-  margin-top: -213px;
-  margin-left: -30px;
+  top: 90px;
+  margin-top: -50%;
+  margin-left: -45%;
 }
 
 .TitleSoftware{
@@ -240,28 +53,30 @@ footer {
     color: #707070;
 }
 #fondo{
-  background: url(../img/intro_background.png) no-repeat;
+  background: url(../img/intro_background.png) 50% 0 no-repeat fixed;
   height: 90.80%;
 }
-
 #posicionImg{
-  margin-top: 20%;
-  
+    margin-top: 20%;
+
 }
+
 .fondo2amarillo{
   background-color: #EED329;
   width: 100%;
 }
 
 #fondo2centro{
-  background:url(../img/back_yellow.png) 400px -50px no-repeat ;
+  background:url(../img/back_yellow.png) 300px -70px no-repeat ;
+  background-size: 50%;
 }
 #altura{
   margin-top: -10%;
-  margin-left: 30%;
+  float:right;
 }
 #alturaDos{
   margin-top: 10%;
+
 }
 #alturaParrafoUno{
    text-align: left;
@@ -275,14 +90,15 @@ footer {
 
 
 .first {
-  background-color: #000000;
-  width: 100%
+  background-color: #000000 ; 
+  width: 100%;
+
 }
 
 .title {
   font-family: 'Roboto', sans-serif;
   font-size: 30pt;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 .fondo1 {
@@ -329,3 +145,43 @@ footer {
   position:relative;
   top:1px;
 }
+@media screen and (max-width: 1229px) {
+    .image {
+       height: 200px;
+        width: 200px;
+         position: relative;
+        margin-top: -130%;
+          margin-left: -55%;
+    }
+}
+@media screen and (max-width: 1112px) {
+    .image {
+       height: 170px;
+        width: 170px;
+         position: relative;
+        margin-top: -130%;
+          margin-left: -55%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .image {
+       height: 170px;
+        width: 170px;
+         position: relative;
+        margin-top: -20%;
+          margin-left: 70%;
+    }
+    #altura{
+      margin-left: 100%;
+    }
+
+}
+@media screen and (max-width: 845px) {
+    .image {
+    display: none;
+    }
+
+}
+
+

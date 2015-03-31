@@ -1,181 +1,183 @@
 * {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .navbar {
-  background-color: black;
-  margin-bottom: 0px;
-  border-bottom: 0px solid black;
+	background-color: black;
+	margin-bottom: 0px;
+	border-bottom: 0px solid black;
 }
 
 .row{margin-right:0px;margin-left:0px}
 /*********************************/
 
 
-/*new css*/
+	/*///////////////////////////////////////////color and bacground the page /////////////////////////////////////////*/
 .Cognist {
-  height: 30px;,
-  width: 30px;
+	height: 30px;,
+	width: 30px;
 }
 
 .WouldLike{
-  background-color: #3BC4D7;
-  height: 250px;
+	background-color: #3BC4D7;
+
 
 }
 .navbar {
- position: static;
+	position: static;
 }
 
 
 
 .OurApprenticesTitle{
-  color: white;
+	color: white;
 
 }
 .image{
- height: 220px;
- width: 220px;
-  position: relative;
-  top: 90px;
-  margin-top: -50%;
-  margin-left: -45%;
+	height: 220px;
+	width: 220px;
+	position: relative;
+	top: 90px;
+	margin-top: -50%;
+	margin-left: -45%;
 }
 
 .TitleSoftware{
-  color: #707070;
+	color: #707070;
 }
 .HowDoesText{
-  background-color: #E6E6E6;
+	background-color: #E6E6E6;
 
 }
 
 .TitleGray{
-    color: #707070;
+	color: #707070;
 }
 #fondo{
-  background: url(../img/intro_background.png) no-repeat;
-  height: 90.80%;
+	background: url(../img/intro_background.png) no-repeat;
+	height: 90.80%;
 }
 
 
 .fondo2amarillo{
-  background-color: #EED329;
-  width: 100%;
+	background-color: #EED329;
+	width: 100%;
 }
 
 #fondo2centro{
-  background:url(../img/back_yellow.png) 400px -50px no-repeat ;
+	background:url(../img/back_yellow.png) 400px -50px no-repeat ;
 }
 #altura{
-  margin-top: -10%;
-  margin-left: 30%;
+	margin-top: -10%;
+	margin-left: 30%;
 }
 #alturaDos{
-  margin-top: 10%;
+	margin-top: 10%;
 }
 #alturaParrafoUno{
-   text-align: left;
-   font-size: 20px;
-}
+	text-align: left;
+	font-size: 20px;
+	}
 #alturaParrafoDos{
-   text-align: right;
-     margin-top: 20%;
-     font-size: 20px;
+	text-align: right;
+	 margin-top: 20%;
+	 font-size: 20px;
 }
 
 
 .first {
-  background-color: #000000;
-  width: 100%;
+	background-color: #000000;
+	width: 100%;
 
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 30pt;
-  color: #fff;
-  text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30pt;
+	color: #fff;
+	text-align: center;
 }
 .fondo1 {
-  float:right;
+	float:right;
 }
-
+/*////////////////////////////////buttton Cognits///////////////////////////////////////////////*/
 .myButtonMail {
-  -moz-box-shadow:inset 0px 0px 0px 0px #f29c93;
-  -webkit-box-shadow:inset 0px 0px 0px 0px #f29c93;
-  box-shadow:inset 0px 0px 0px 0px #f29c93;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
-  background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
-  background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
-  background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
-  background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
-  background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
-  background-color:#fe1a00;
-  -moz-border-radius:2px;
-  -webkit-border-radius:2px;
-  border-radius:2px;
-  border:2px solid #d83526;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:16px;
-  font-weight:bold;
-  padding:7px 28px;
-  text-decoration:none;
-  text-shadow:2px 2px 0px #b23e35;
+	-moz-box-shadow:inset 0px 0px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #f29c93;
+	box-shadow:inset 0px 0px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border:2px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:7px 28px;
+	text-decoration:none;
+	text-shadow:2px 2px 0px #b23e35;
 }
 .myButtonMail:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
-  background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
-  background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
-  background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
-  background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
-  background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
-  background-color:#ce0100;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+	background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+	background-color:#ce0100;
 }
 .myButtonMail:active {
-  position:relative;
-  top:1px;
+	position:relative;
+	top:1px;
 }
+
+/*/////////////////////////////media queries//////////////////////////////////////////////*/
 @media screen and (max-width: 1229px) {
-    .image {
-       height: 200px;
-        width: 200px;
-         position: relative;
-        margin-top: -130%;
-          margin-left: -55%;
-    }
+	.image {
+		height: 200px;
+		width: 200px;
+		position: relative;
+		margin-top: -130%;
+		margin-left: -55%;
+	}
 }
 @media screen and (max-width: 1112px) {
-    .image {
-       height: 170px;
-        width: 170px;
-         position: relative;
-        margin-top: -130%;
-          margin-left: -55%;
-    }
+	.image {
+		height: 170px;
+		width: 170px;
+		position: relative;
+		margin-top: -130%;
+		margin-left: -55%;
+	}
 }
 
 @media screen and (max-width: 991px) {
-    .image {
-       height: 170px;
-        width: 170px;
-         position: relative;
-        margin-top: -20%;
-          margin-left: 70%;
-    }
-    #altura{
-      margin-left: 100%;
-    }
+	.image {
+		height: 170px;
+		width: 170px;
+		position: relative;
+		margin-top: -20%;
+		margin-left: 70%;
+	}
+	#altura{
+		margin-left: 100%;
+	}
 
 }
 @media screen and (max-width: 845px) {
-    .image {
-    display: none;
-    }
+	.image {
+	display: none;
+	}
 
 }
 
